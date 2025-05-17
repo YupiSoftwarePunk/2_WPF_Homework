@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2_WPF_Homework"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" Height="452" Width="804"
         WindowState="Maximized">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -21,15 +21,15 @@
             <RowDefinition Height="0.4*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" >
-            
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+
             <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Center" FontSize="30" 
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center">
                 <Run Foreground="#FFC85B5B" FontWeight="Bold">Регистрация</Run>
                 <Run Foreground="Black">сотрудников</Run>
             </TextBlock>
-            
+
             <TextBlock FontSize="30" HorizontalAlignment="Center">компании</TextBlock>
         </StackPanel>
 
@@ -38,7 +38,7 @@
                     Margin="5">
             <TextBlock Text="Отзывы на техподдержку" FontSize="24"/>
             <ListBox BorderThickness="0">
-                
+
                 <ListBoxItem>
                     <StackPanel>
                         <TextBlock Text="Дёмин Александр Ильич" FontSize="22"/>
@@ -59,7 +59,7 @@
                         <TextBlock Text="Не довзвонился, но решил всё сам!" FontSize="14"/>
                     </StackPanel>
                 </ListBoxItem>
-                
+
             </ListBox>
         </StackPanel>
 
@@ -69,7 +69,7 @@
                 <TextBlock Text="Логин:" FontSize="20"/>
                 <TextBox FontSize="20">login_user</TextBox>
             </StackPanel>
-            
+
             <StackPanel>
                 <TextBlock Text="Пароль:" FontSize="20"/>
                 <PasswordBox FontSize="20"></PasswordBox>
@@ -88,15 +88,15 @@
                             <TextBlock  Text="Администратор"/>
                         </StackPanel>
                     </ComboBoxItem>
-                    
+
                     <StackPanel>
                         <TextBlock Text="Уборщик"/>
                     </StackPanel>
-                    
+
                     <StackPanel>
                         <TextBlock Text="Сантехник"/>
                     </StackPanel>
-                    
+
                     <StackPanel>
                         <TextBlock Text="Водитель"/>
                     </StackPanel>
@@ -104,7 +104,7 @@
                     <StackPanel>
                         <TextBlock Text="Менеджер"/>
                     </StackPanel>
-                    
+
                 </ComboBox>
             </StackPanel>
 
@@ -147,27 +147,35 @@
             </ListBox>
         </StackPanel>
 
-        <Grid Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
+        <Grid Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="1"  >
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="1"/>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="17*"/>
             </Grid.RowDefinitions>
 
             <Button Content="Зарегистрировать" 
-                    Margin="5" Grid.Column="0" Grid.Row="1"
-                    Background="#FF5AA56C" FontSize="20"
-                    HorizontalAlignment="Stretch"/>
+                    Margin="5,5,6,5" Grid.Column="0" Grid.Row="2"
+                    Background="#FF5AA56C" FontSize="20" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.173"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
 
             <Button Content="Отменить" 
-                    Margin="5" Grid.Column="2" Grid.Row="1"
-                    Background="#FFC85B5B" FontSize="20"
-                    HorizontalAlignment="Stretch"/>
+                    Margin="6,5,5,5" Grid.Column="2" Grid.Row="2"
+                    Background="#FFC85B5B" FontSize="20"/>
 
         </Grid>
     </Grid>
