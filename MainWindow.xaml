@@ -17,7 +17,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="0.4*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.4*"/>
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2">
@@ -52,6 +52,61 @@
                     </StackPanel>
                 </ListBoxItem>
             </ListBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="2" Grid.RowSpan="2">
+            <StackPanel>
+                <TextBlock Text="Логин:" FontSize="20"/>
+                <TextBox FontSize="20">login_user</TextBox>
+            </StackPanel>
+            
+            <StackPanel>
+                <TextBlock Text="Пароль:" FontSize="20"/>
+                <PasswordBox FontSize="20"></PasswordBox>
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock Text="Повторите пароль:" FontSize="20"/>
+                <PasswordBox PasswordChar="#" FontSize="20"></PasswordBox>
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock Text="Должность:" FontSize="20"/>
+                <ComboBox FontSize="20" Name="Positions">
+                    <ComboBoxItem IsSelected="True">
+                        <StackPanel>
+                            <TextBlock  Text="Администратор"/>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    
+                    <StackPanel>
+                        <TextBlock Text="Уборщик"/>
+                    </StackPanel>
+                    
+                    <StackPanel>
+                        <TextBlock Text="Сантехник"/>
+                    </StackPanel>
+                    
+                    <StackPanel>
+                        <TextBlock Text="Водитель"/>
+                    </StackPanel>
+
+                    <StackPanel>
+                        <TextBlock Text="Менеджер"/>
+                    </StackPanel>
+                    
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock Text="Комментарий:" FontSize="20"/>
+                <TextBox AcceptsReturn="True"
+                    VerticalScrollBarVisibility="Visible"
+                         AcceptsTab="True"
+                         FontSize="20" MaxLines="3" >
+                </TextBox>
+            </StackPanel>
+
         </StackPanel>
     </Grid>
 </Window>

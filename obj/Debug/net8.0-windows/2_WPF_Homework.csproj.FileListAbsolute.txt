@@ -18,3 +18,4 @@ C:\Users\Denis\Documents\projects C#\2_WPF_Homework\obj\Debug\net8.0-windows\ref
 C:\Users\Denis\Documents\projects C#\2_WPF_Homework\obj\Debug\net8.0-windows\2_WPF_Homework.pdb
 C:\Users\Denis\Documents\projects C#\2_WPF_Homework\obj\Debug\net8.0-windows\2_WPF_Homework.genruntimeconfig.cache
 C:\Users\Denis\Documents\projects C#\2_WPF_Homework\obj\Debug\net8.0-windows\ref\2_WPF_Homework.dll
+C:\Users\Denis\Documents\projects C#\2_WPF_Homework\obj\Debug\net8.0-windows\2_WPF_Homework.sourcelink.json
