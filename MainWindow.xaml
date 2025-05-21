@@ -16,12 +16,15 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="0.4*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Grid.RowSpan="1">
 
             <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Center" FontSize="30" 
                        HorizontalAlignment="Center"
@@ -34,7 +37,7 @@
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="0" 
-                    Grid.ColumnSpan="2" Grid.RowSpan="1"
+                    Grid.ColumnSpan="2" Grid.RowSpan="2"
                     Margin="5">
             <TextBlock Text="Отзывы на техподдержку" FontSize="24"/>
             <ListBox BorderThickness="0">
@@ -119,7 +122,8 @@
 
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Grid.Column="3" Margin="5">
+        <StackPanel Grid.Row="1" Grid.Column="3" Margin="5"
+                    Grid.ColumnSpan="1" Grid.RowSpan="2">
             <TextBlock Text="Техническая поддержка" FontSize="24"/>
             <ListBox BorderThickness="0">
 
@@ -147,7 +151,7 @@
             </ListBox>
         </StackPanel>
 
-        <Grid Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="1"  >
+        <Grid Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="1"  >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="1"/>
@@ -156,7 +160,7 @@
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="5*"/>
-                <RowDefinition Height="12*"/>
+                
                 <RowDefinition Height="17*"/>
             </Grid.RowDefinitions>
 
